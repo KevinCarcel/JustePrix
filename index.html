@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Juste Prix</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1>Juste Prix</h1>
+
+	<div class="flex1 descend">
+		<p id="guessOutput" class="petit"></p>
+		<div>
+			<label for="guessInput">Devinez le nombre</label>
+			<input type="number" id="guessInput" min="1" max="100">
+			<div class="flex1">
+				<button onclick="checkGuess()">Valider</button>
+				<button id="resetButton">Reset</button>
+			</div>
+		</div>
+		<ul id="guessList"></ul>
+		<p id="timer" class="clignotement">60 secondes</p>
+	</div>
+
+	<script src="JustePrix.js"></script>
+</body>
+
+</html>
